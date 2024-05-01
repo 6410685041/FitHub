@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C32F1F1A2BE24E54009556CA /* FithubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F192BE24E54009556CA /* FithubApp.swift */; };
+		C32F1F1C2BE24E54009556CA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F1B2BE24E54009556CA /* MainView.swift */; };
+		C32F1F1E2BE24E55009556CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32F1F1D2BE24E55009556CA /* Assets.xcassets */; };
+		C32F1F212BE24E55009556CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32F1F202BE24E55009556CA /* Preview Assets.xcassets */; };
+		C32F1F2B2BE24E55009556CA /* FithubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F2A2BE24E55009556CA /* FithubTests.swift */; };
+		C32F1F352BE24E55009556CA /* FithubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F342BE24E55009556CA /* FithubUITests.swift */; };
+		C32F1F372BE24E55009556CA /* FithubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F362BE24E55009556CA /* FithubUITestsLaunchTests.swift */; };
+		C32F1F452BE2500D009556CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C32F1F442BE2500D009556CA /* GoogleService-Info.plist */; };
+		C32F1F4A2BE25136009556CA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F492BE25136009556CA /* SignInView.swift */; };
+		C32F1F4D2BE251C4009556CA /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F4C2BE251C4009556CA /* Users.swift */; };
+		C32F1F512BE2527C009556CA /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F502BE2527B009556CA /* SignInViewModel.swift */; };
+		C32F1F532BE2539D009556CA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F522BE2539D009556CA /* SignUpView.swift */; };
+		C32F1F552BE253C6009556CA /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F542BE253C6009556CA /* SignUpViewModel.swift */; };
+		C32F1F572BE255C4009556CA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C32F1F562BE255C4009556CA /* FirebaseAuth */; };
+		C32F1F592BE255C4009556CA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C32F1F582BE255C4009556CA /* FirebaseDatabase */; };
+		C32F1F5B2BE255C4009556CA /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C32F1F5A2BE255C4009556CA /* FirebaseDatabaseSwift */; };
+		C32F1F5D2BE255C4009556CA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C32F1F5C2BE255C4009556CA /* FirebaseFirestore */; };
+		C32F1F5F2BE255C4009556CA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C32F1F5E2BE255C4009556CA /* FirebaseFirestoreSwift */; };
+		C32F1F612BE255C4009556CA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C32F1F602BE255C4009556CA /* FirebaseStorage */; };
+		C32F1F632BE25959009556CA /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F622BE25959009556CA /* Extension.swift */; };
+		C32F1F652BE25AAF009556CA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F642BE25AAF009556CA /* MainViewModel.swift */; };
+		C32F1F682BE25D46009556CA /* customTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F672BE25D46009556CA /* customTabBarItem.swift */; };
+		C32F1F6D2BE25DA9009556CA /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F6C2BE25DA9009556CA /* ActivityView.swift */; };
+		C32F1F6F2BE25DBD009556CA /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F6E2BE25DBD009556CA /* ChallengeView.swift */; };
+		C32F1F712BE25DD4009556CA /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F702BE25DD4009556CA /* HomepageView.swift */; };
+		C32F1F732BE26090009556CA /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F722BE26090009556CA /* ActivityViewModel.swift */; };
+		C32F1F752BE2609B009556CA /* ChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F742BE2609B009556CA /* ChallengeViewModel.swift */; };
+		C32F1F772BE260AE009556CA /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F762BE260AE009556CA /* Challenge.swift */; };
+		C32F1F792BE260BC009556CA /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F782BE260BC009556CA /* Activity.swift */; };
+		C32F1F7B2BE26170009556CA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F7A2BE26170009556CA /* MapView.swift */; };
+		C32F1F7D2BE261DF009556CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F7C2BE261DF009556CA /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C32F1F272BE24E55009556CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32F1F0E2BE24E54009556CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C32F1F152BE24E54009556CA;
+			remoteInfo = Fithub;
+		};
+		C32F1F312BE24E55009556CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32F1F0E2BE24E54009556CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C32F1F152BE24E54009556CA;
+			remoteInfo = Fithub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C32F1F162BE24E54009556CA /* Fithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32F1F192BE24E54009556CA /* FithubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FithubApp.swift; sourceTree = "<group>"; };
+		C32F1F1B2BE24E54009556CA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C32F1F1D2BE24E55009556CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C32F1F202BE24E55009556CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C32F1F262BE24E55009556CA /* FithubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FithubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32F1F2A2BE24E55009556CA /* FithubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FithubTests.swift; sourceTree = "<group>"; };
+		C32F1F302BE24E55009556CA /* FithubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FithubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32F1F342BE24E55009556CA /* FithubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FithubUITests.swift; sourceTree = "<group>"; };
+		C32F1F362BE24E55009556CA /* FithubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FithubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C32F1F442BE2500D009556CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C32F1F492BE25136009556CA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		C32F1F4C2BE251C4009556CA /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		C32F1F502BE2527B009556CA /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		C32F1F522BE2539D009556CA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		C32F1F542BE253C6009556CA /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		C32F1F622BE25959009556CA /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		C32F1F642BE25AAF009556CA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		C32F1F672BE25D46009556CA /* customTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTabBarItem.swift; sourceTree = "<group>"; };
+		C32F1F6C2BE25DA9009556CA /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		C32F1F6E2BE25DBD009556CA /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
+		C32F1F702BE25DD4009556CA /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
+		C32F1F722BE26090009556CA /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		C32F1F742BE2609B009556CA /* ChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModel.swift; sourceTree = "<group>"; };
+		C32F1F762BE260AE009556CA /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		C32F1F782BE260BC009556CA /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		C32F1F7A2BE26170009556CA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C32F1F7C2BE261DF009556CA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C32F1F132BE24E54009556CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32F1F5F2BE255C4009556CA /* FirebaseFirestoreSwift in Frameworks */,
+				C32F1F5B2BE255C4009556CA /* FirebaseDatabaseSwift in Frameworks */,
+				C32F1F5D2BE255C4009556CA /* FirebaseFirestore in Frameworks */,
+				C32F1F592BE255C4009556CA /* FirebaseDatabase in Frameworks */,
+				C32F1F572BE255C4009556CA /* FirebaseAuth in Frameworks */,
+				C32F1F612BE255C4009556CA /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32F1F232BE24E55009556CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32F1F2D2BE24E55009556CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C32F1F0D2BE24E54009556CA = {
+			isa = PBXGroup;
+			children = (
+				C32F1F182BE24E54009556CA /* Fithub */,
+				C32F1F292BE24E55009556CA /* FithubTests */,
+				C32F1F332BE24E55009556CA /* FithubUITests */,
+				C32F1F172BE24E54009556CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C32F1F172BE24E54009556CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F162BE24E54009556CA /* Fithub.app */,
+				C32F1F262BE24E55009556CA /* FithubTests.xctest */,
+				C32F1F302BE24E55009556CA /* FithubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C32F1F182BE24E54009556CA /* Fithub */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F4B2BE25156009556CA /* Models */,
+				C32F1F4E2BE25241009556CA /* ViewModels */,
+				C32F1F472BE25115009556CA /* Views */,
+				C32F1F462BE250E7009556CA /* Others */,
+				C32F1F1F2BE24E55009556CA /* Preview Content */,
+			);
+			path = Fithub;
+			sourceTree = "<group>";
+		};
+		C32F1F1F2BE24E55009556CA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F202BE24E55009556CA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C32F1F292BE24E55009556CA /* FithubTests */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F2A2BE24E55009556CA /* FithubTests.swift */,
+			);
+			path = FithubTests;
+			sourceTree = "<group>";
+		};
+		C32F1F332BE24E55009556CA /* FithubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F342BE24E55009556CA /* FithubUITests.swift */,
+				C32F1F362BE24E55009556CA /* FithubUITestsLaunchTests.swift */,
+			);
+			path = FithubUITests;
+			sourceTree = "<group>";
+		};
+		C32F1F462BE250E7009556CA /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F442BE2500D009556CA /* GoogleService-Info.plist */,
+				C32F1F1D2BE24E55009556CA /* Assets.xcassets */,
+				C32F1F192BE24E54009556CA /* FithubApp.swift */,
+				C32F1F622BE25959009556CA /* Extension.swift */,
+				C32F1F7C2BE261DF009556CA /* LocationManager.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		C32F1F472BE25115009556CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F1B2BE24E54009556CA /* MainView.swift */,
+				C32F1F6B2BE25D86009556CA /* Homepage */,
+				C32F1F6A2BE25D75009556CA /* Challenge */,
+				C32F1F692BE25D6A009556CA /* Activity */,
+				C32F1F662BE25D16009556CA /* Others */,
+				C32F1F482BE25120009556CA /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C32F1F482BE25120009556CA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F492BE25136009556CA /* SignInView.swift */,
+				C32F1F522BE2539D009556CA /* SignUpView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C32F1F4B2BE25156009556CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F4C2BE251C4009556CA /* Users.swift */,
+				C32F1F762BE260AE009556CA /* Challenge.swift */,
+				C32F1F782BE260BC009556CA /* Activity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C32F1F4E2BE25241009556CA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F4F2BE2525A009556CA /* Login */,
+				C32F1F642BE25AAF009556CA /* MainViewModel.swift */,
+				C32F1F722BE26090009556CA /* ActivityViewModel.swift */,
+				C32F1F742BE2609B009556CA /* ChallengeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C32F1F4F2BE2525A009556CA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F502BE2527B009556CA /* SignInViewModel.swift */,
+				C32F1F542BE253C6009556CA /* SignUpViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C32F1F662BE25D16009556CA /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F672BE25D46009556CA /* customTabBarItem.swift */,
+				C32F1F7A2BE26170009556CA /* MapView.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		C32F1F692BE25D6A009556CA /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F6C2BE25DA9009556CA /* ActivityView.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		C32F1F6A2BE25D75009556CA /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F6E2BE25DBD009556CA /* ChallengeView.swift */,
+			);
+			path = Challenge;
+			sourceTree = "<group>";
+		};
+		C32F1F6B2BE25D86009556CA /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				C32F1F702BE25DD4009556CA /* HomepageView.swift */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C32F1F152BE24E54009556CA /* Fithub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C32F1F3A2BE24E55009556CA /* Build configuration list for PBXNativeTarget "Fithub" */;
+			buildPhases = (
+				C32F1F122BE24E54009556CA /* Sources */,
+				C32F1F132BE24E54009556CA /* Frameworks */,
+				C32F1F142BE24E54009556CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fithub;
+			packageProductDependencies = (
+				C32F1F562BE255C4009556CA /* FirebaseAuth */,
+				C32F1F582BE255C4009556CA /* FirebaseDatabase */,
+				C32F1F5A2BE255C4009556CA /* FirebaseDatabaseSwift */,
+				C32F1F5C2BE255C4009556CA /* FirebaseFirestore */,
+				C32F1F5E2BE255C4009556CA /* FirebaseFirestoreSwift */,
+				C32F1F602BE255C4009556CA /* FirebaseStorage */,
+			);
+			productName = Fithub;
+			productReference = C32F1F162BE24E54009556CA /* Fithub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C32F1F252BE24E55009556CA /* FithubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C32F1F3D2BE24E55009556CA /* Build configuration list for PBXNativeTarget "FithubTests" */;
+			buildPhases = (
+				C32F1F222BE24E55009556CA /* Sources */,
+				C32F1F232BE24E55009556CA /* Frameworks */,
+				C32F1F242BE24E55009556CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C32F1F282BE24E55009556CA /* PBXTargetDependency */,
+			);
+			name = FithubTests;
+			productName = FithubTests;
+			productReference = C32F1F262BE24E55009556CA /* FithubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C32F1F2F2BE24E55009556CA /* FithubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C32F1F402BE24E55009556CA /* Build configuration list for PBXNativeTarget "FithubUITests" */;
+			buildPhases = (
+				C32F1F2C2BE24E55009556CA /* Sources */,
+				C32F1F2D2BE24E55009556CA /* Frameworks */,
+				C32F1F2E2BE24E55009556CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C32F1F322BE24E55009556CA /* PBXTargetDependency */,
+			);
+			name = FithubUITests;
+			productName = FithubUITests;
+			productReference = C32F1F302BE24E55009556CA /* FithubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C32F1F0E2BE24E54009556CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					C32F1F152BE24E54009556CA = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					C32F1F252BE24E55009556CA = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C32F1F152BE24E54009556CA;
+					};
+					C32F1F2F2BE24E55009556CA = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C32F1F152BE24E54009556CA;
+					};
+				};
+			};
+			buildConfigurationList = C32F1F112BE24E54009556CA /* Build configuration list for PBXProject "Fithub" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C32F1F0D2BE24E54009556CA;
+			packageReferences = (
+				C32F1F432BE24FEF009556CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = C32F1F172BE24E54009556CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C32F1F152BE24E54009556CA /* Fithub */,
+				C32F1F252BE24E55009556CA /* FithubTests */,
+				C32F1F2F2BE24E55009556CA /* FithubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C32F1F142BE24E54009556CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32F1F212BE24E55009556CA /* Preview Assets.xcassets in Resources */,
+				C32F1F1E2BE24E55009556CA /* Assets.xcassets in Resources */,
+				C32F1F452BE2500D009556CA /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32F1F242BE24E55009556CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32F1F2E2BE24E55009556CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C32F1F122BE24E54009556CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32F1F792BE260BC009556CA /* Activity.swift in Sources */,
+				C32F1F4D2BE251C4009556CA /* Users.swift in Sources */,
+				C32F1F1C2BE24E54009556CA /* MainView.swift in Sources */,
+				C32F1F4A2BE25136009556CA /* SignInView.swift in Sources */,
+				C32F1F712BE25DD4009556CA /* HomepageView.swift in Sources */,
+				C32F1F682BE25D46009556CA /* customTabBarItem.swift in Sources */,
+				C32F1F1A2BE24E54009556CA /* FithubApp.swift in Sources */,
+				C32F1F7B2BE26170009556CA /* MapView.swift in Sources */,
+				C32F1F532BE2539D009556CA /* SignUpView.swift in Sources */,
+				C32F1F512BE2527C009556CA /* SignInViewModel.swift in Sources */,
+				C32F1F752BE2609B009556CA /* ChallengeViewModel.swift in Sources */,
+				C32F1F552BE253C6009556CA /* SignUpViewModel.swift in Sources */,
+				C32F1F732BE26090009556CA /* ActivityViewModel.swift in Sources */,
+				C32F1F6F2BE25DBD009556CA /* ChallengeView.swift in Sources */,
+				C32F1F632BE25959009556CA /* Extension.swift in Sources */,
+				C32F1F772BE260AE009556CA /* Challenge.swift in Sources */,
+				C32F1F6D2BE25DA9009556CA /* ActivityView.swift in Sources */,
+				C32F1F7D2BE261DF009556CA /* LocationManager.swift in Sources */,
+				C32F1F652BE25AAF009556CA /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32F1F222BE24E55009556CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32F1F2B2BE24E55009556CA /* FithubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32F1F2C2BE24E55009556CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32F1F372BE24E55009556CA /* FithubUITestsLaunchTests.swift in Sources */,
+				C32F1F352BE24E55009556CA /* FithubUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C32F1F282BE24E55009556CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C32F1F152BE24E54009556CA /* Fithub */;
+			targetProxy = C32F1F272BE24E55009556CA /* PBXContainerItemProxy */;
+		};
+		C32F1F322BE24E55009556CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C32F1F152BE24E54009556CA /* Fithub */;
+			targetProxy = C32F1F312BE24E55009556CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C32F1F382BE24E55009556CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C32F1F392BE24E55009556CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C32F1F3B2BE24E55009556CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fithub/Preview Content\"";
+				DEVELOPMENT_TEAM = GW582Z4DA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chalisa.Fithub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C32F1F3C2BE24E55009556CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fithub/Preview Content\"";
+				DEVELOPMENT_TEAM = GW582Z4DA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chalisa.Fithub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C32F1F3E2BE24E55009556CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GW582Z4DA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chalisa.FithubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fithub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fithub";
+			};
+			name = Debug;
+		};
+		C32F1F3F2BE24E55009556CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GW582Z4DA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chalisa.FithubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fithub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fithub";
+			};
+			name = Release;
+		};
+		C32F1F412BE24E55009556CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GW582Z4DA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chalisa.FithubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fithub;
+			};
+			name = Debug;
+		};
+		C32F1F422BE24E55009556CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GW582Z4DA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chalisa.FithubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fithub;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C32F1F112BE24E54009556CA /* Build configuration list for PBXProject "Fithub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32F1F382BE24E55009556CA /* Debug */,
+				C32F1F392BE24E55009556CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C32F1F3A2BE24E55009556CA /* Build configuration list for PBXNativeTarget "Fithub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32F1F3B2BE24E55009556CA /* Debug */,
+				C32F1F3C2BE24E55009556CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C32F1F3D2BE24E55009556CA /* Build configuration list for PBXNativeTarget "FithubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32F1F3E2BE24E55009556CA /* Debug */,
+				C32F1F3F2BE24E55009556CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C32F1F402BE24E55009556CA /* Build configuration list for PBXNativeTarget "FithubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32F1F412BE24E55009556CA /* Debug */,
+				C32F1F422BE24E55009556CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C32F1F432BE24FEF009556CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C32F1F562BE255C4009556CA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C32F1F432BE24FEF009556CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C32F1F582BE255C4009556CA /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C32F1F432BE24FEF009556CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		C32F1F5A2BE255C4009556CA /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C32F1F432BE24FEF009556CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		C32F1F5C2BE255C4009556CA /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C32F1F432BE24FEF009556CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C32F1F5E2BE255C4009556CA /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C32F1F432BE24FEF009556CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		C32F1F602BE255C4009556CA /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C32F1F432BE24FEF009556CA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C32F1F0E2BE24E54009556CA /* Project object */;
+}
