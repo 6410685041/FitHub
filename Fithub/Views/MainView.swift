@@ -40,12 +40,13 @@ struct MainView: View {
             VStack{
                 ZStack{
                     Rectangle()
+                        .edgesIgnoringSafeArea(.all)
+                        .foregroundColor(Color(UIColor(hex: "#343434")))
                         .frame(width: .infinity, height: 100)
-                        .edgesIgnoringSafeArea([.bottom])
                     HStack {
                         customTabBarItem(selectedTab: $selectedTab, index: 0, label: "Home", icon: "house.fill")
-                        customTabBarItem(selectedTab: $selectedTab, index: 1, label: "Activity", icon: "clipboard.fill")
-                        customTabBarItem(selectedTab: $selectedTab, index: 2, label: "Challenge", icon: "newspaper.fill")
+                        customTabBarItem(selectedTab: $selectedTab, index: 1, label: "Activity", icon: "figure.run")
+                        customTabBarItem(selectedTab: $selectedTab, index: 2, label: "Challenge", icon: "flag.2.crossed.fill")
                     }
                     .padding(.horizontal)
                 }

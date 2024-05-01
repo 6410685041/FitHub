@@ -16,7 +16,11 @@ struct FithubApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainView()
+            ZStack {
+                Color(UIColor(hex: "#292929"))
+                    .edgesIgnoringSafeArea(.all)
+                MainView()
+            }
         }
     }
 }

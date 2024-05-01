@@ -38,6 +38,8 @@
 		C32F1F792BE260BC009556CA /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F782BE260BC009556CA /* Activity.swift */; };
 		C32F1F7B2BE26170009556CA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F7A2BE26170009556CA /* MapView.swift */; };
 		C32F1F7D2BE261DF009556CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F7C2BE261DF009556CA /* LocationManager.swift */; };
+		C32F1F7F2BE2BE75009556CA /* customTopTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F7E2BE2BE75009556CA /* customTopTabBarItem.swift */; };
+		C32F1F812BE2C957009556CA /* OverAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F802BE2C957009556CA /* OverAllView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		C32F1F782BE260BC009556CA /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		C32F1F7A2BE26170009556CA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		C32F1F7C2BE261DF009556CA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C32F1F7E2BE2BE75009556CA /* customTopTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTopTabBarItem.swift; sourceTree = "<group>"; };
+		C32F1F802BE2C957009556CA /* OverAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverAllView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				C32F1F672BE25D46009556CA /* customTabBarItem.swift */,
+				C32F1F7E2BE2BE75009556CA /* customTopTabBarItem.swift */,
 				C32F1F7A2BE26170009556CA /* MapView.swift */,
 			);
 			path = Others;
@@ -269,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				C32F1F702BE25DD4009556CA /* HomepageView.swift */,
+				C32F1F802BE2C957009556CA /* OverAllView.swift */,
 			);
 			path = Homepage;
 			sourceTree = "<group>";
@@ -417,6 +423,7 @@
 			files = (
 				C32F1F792BE260BC009556CA /* Activity.swift in Sources */,
 				C32F1F4D2BE251C4009556CA /* Users.swift in Sources */,
+				C32F1F812BE2C957009556CA /* OverAllView.swift in Sources */,
 				C32F1F1C2BE24E54009556CA /* MainView.swift in Sources */,
 				C32F1F4A2BE25136009556CA /* SignInView.swift in Sources */,
 				C32F1F712BE25DD4009556CA /* HomepageView.swift in Sources */,
@@ -424,6 +431,7 @@
 				C32F1F1A2BE24E54009556CA /* FithubApp.swift in Sources */,
 				C32F1F7B2BE26170009556CA /* MapView.swift in Sources */,
 				C32F1F532BE2539D009556CA /* SignUpView.swift in Sources */,
+				C32F1F7F2BE2BE75009556CA /* customTopTabBarItem.swift in Sources */,
 				C32F1F512BE2527C009556CA /* SignInViewModel.swift in Sources */,
 				C32F1F752BE2609B009556CA /* ChallengeViewModel.swift in Sources */,
 				C32F1F552BE253C6009556CA /* SignUpViewModel.swift in Sources */,

@@ -9,7 +9,35 @@ import SwiftUI
 
 struct HomepageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            // Header
+            HStack{
+                Text("FitHub")
+                    .foregroundColor(.white)
+                    .font(.system(size: 40))
+                    .bold()
+                Spacer()
+                Button {
+                    
+                } label: {
+                    Image(systemName: "bell.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30)
+                }.padding(.trailing)
+                Button {
+                    
+                } label: {
+                    Image(systemName: "person.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 40)
+                }
+            }.padding(.horizontal, 30)
+            
+            OverAllView()
+            Spacer()
+        }.padding(.top)
     }
 }
 
