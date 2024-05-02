@@ -20,14 +20,16 @@ struct HomepageView: View {
                         .font(.system(size: 40))
                         .bold()
                     Spacer()
-                    Button {
-                        // Action for notifications, if needed
-                    } label: {
-                        Image(systemName: "bell.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 30)
-                    }.padding(.trailing)
+                    
+//                    Button {
+//                        // Action for notifications, if needed
+//                    } label: {
+//                        Image(systemName: "bell.fill")
+//                            .resizable()
+//                            .aspectRatio(contentMode: .fit)
+//                            .frame(width: 30)
+//                    }.padding(.trailing)
+                    
                     Button(action: {
                         showProfile = true
                     }) {
@@ -42,6 +44,7 @@ struct HomepageView: View {
                 Spacer()
             }
             .padding(.top)
+            .background(Color(UIColor(hex: "#292929")))
             .background(NavigationLink(destination: ProfileView(), isActive: $showProfile) {
                 EmptyView()
             })
