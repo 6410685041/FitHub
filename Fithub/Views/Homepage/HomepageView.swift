@@ -8,38 +8,47 @@
 import SwiftUI
 
 struct HomepageView: View {
+    @State private var showProfile = false  // State to control navigation
+
     var body: some View {
-        VStack {
-            // Header
-            HStack{
-                Text("FitHub")
-                    .foregroundColor(.white)
-                    .font(.system(size: 40))
-                    .bold()
+        NavigationView {
+            VStack {
+                // Header
+                HStack {
+                    Text("FitHub")
+                        .foregroundColor(.white)
+                        .font(.system(size: 40))
+                        .bold()
+                    Spacer()
+                    Button {
+                        // Action for notifications, if needed
+                    } label: {
+                        Image(systemName: "bell.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 30)
+                    }.padding(.trailing)
+                    Button(action: {
+                        showProfile = true
+                    }) {
+                        Image(systemName: "person.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 40)
+                    }
+                }.padding(.horizontal, 30)
+
+                OverAllView()
                 Spacer()
-                Button {
-                    
-                } label: {
-                    Image(systemName: "bell.fill")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 30)
-                }.padding(.trailing)
-                Button {
-                    
-                } label: {
-                    Image(systemName: "person.circle")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 40)
-                }
-            }.padding(.horizontal, 30)
-            
-            OverAllView()
-            Spacer()
-        }.padding(.top)
+            }
+            .padding(.top)
+            .background(NavigationLink(destination: ProfileView(), isActive: $showProfile) {
+                EmptyView()
+            })
+        }
     }
 }
+
 
 #Preview {
     HomepageView()

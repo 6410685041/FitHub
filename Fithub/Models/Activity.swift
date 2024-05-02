@@ -11,9 +11,9 @@ import FirebaseFirestoreSwift  // Import necessary for Firestore Codable integra
 struct Activity: Identifiable, Codable {
     @DocumentID var id: String?  // Firestore document ID
     var type: String
-    var duration: String
-    var distance: String
-    var caloriesBurned: String
+    var duration: Double  // Duration in seconds or minutes
+    var distance: Double  // Distance in meters
+    var caloriesBurned: Double  // Calories burned
     var date: Date  // Using Date directly for simplicity in Codable
 
     enum CodingKeys: String, CodingKey {

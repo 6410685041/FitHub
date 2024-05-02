@@ -10,21 +10,30 @@ import MapKit
 
 struct ActivityView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @StateObject private var locationManager = LocationManager()
-    @State private var tracking = false
+    @StateObject private var challengeViewModel = ChallengeViewModel()
+    @StateObject private var viewModel: ActivityViewModel
+    
+    init(challengeViewModel: ChallengeViewModel) {
+        self._viewModel = StateObject(wrappedValue: ActivityViewModel(challengeViewModel: challengeViewModel))
+    }
 
     var body: some View {
         VStack {
-            MapView(locationManager: locationManager)
+            MapView(locationManager: viewModel.locationManager)
                 .frame(height: 300)
-            Button(tracking ? "Stop Tracking" : "Start Tracking") {
-                tracking.toggle()
-                tracking ? locationManager.startTracking() : locationManager.stopTracking()
+            if viewModel.isTracking {
+                Text("Distance: \(viewModel.totalDistance / 1000, specifier: "%.2f") km")
+                Text("Time: \(viewModel.totalDuration.formattedTime())")
             }
-            .padding()
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(8)
+            Button(action: {
+                viewModel.toggleTracking()
+            }) {
+                Text(viewModel.isTracking ? "Stop Tracking" : "Start Tracking")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(8)
+            }
             Spacer()
         }
         .padding()
@@ -34,5 +43,5 @@ struct ActivityView: View {
 
 
 #Preview {
-    ActivityView()
+    ActivityView(challengeViewModel: ChallengeViewModel())
 }

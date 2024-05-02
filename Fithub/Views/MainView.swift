@@ -12,14 +12,14 @@ struct MainView: View {
     @State private var selectedTab: Int = 0
     
     var body: some View {
-        Group {
-            if viewModel.isSignedIn, let user = viewModel.user {
-                accountView(for: user)
-            } else {
-                SignInView()
+            Group {
+                if let user = viewModel.user {
+                    accountView(for: user)
+                } else {
+                    SignInView()
+                }
             }
         }
-    }
     
     @ViewBuilder
     private func accountView(for user: User) -> some View {
@@ -29,7 +29,7 @@ struct MainView: View {
             case 0:
                 HomepageView()
             case 1:
-                ActivityView()
+                ActivityView(challengeViewModel: ChallengeViewModel())
             case 2:
                 ChallengeView()
             default:

@@ -5,46 +5,44 @@
 //  Created by ชลิศา ธรรมราช on 1/5/2567 BE.
 //
 
-import Foundation
 import CoreLocation
 import MapKit
 import Combine
 
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
-    @Published var userPath = MKPolyline()
-    @Published var region = MKCoordinateRegion()
-    var locationManager = CLLocationManager()
-    
+    @Published var locations = [CLLocation]()
+    private let manager = CLLocationManager()
+    @Published var location: CLLocationCoordinate2D?
+    @Published var userPath: MKPolyline?
+    @Published var isTracking = false
+
     override init() {
         super.init()
-        self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.requestWhenInUseAuthorization()
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        manager.activityType = .fitness
     }
-    
+
     func startTracking() {
-        locationManager.startUpdatingLocation()
+        isTracking = true
+        locations = []
+        manager.startUpdatingLocation()
     }
     
     func stopTracking() {
-        locationManager.stopUpdatingLocation()
+        isTracking = false
+        manager.stopUpdatingLocation()
+        updateUserPath()
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let latestLocation = locations.last else { return }
-        
-        var coordinates = [CLLocationCoordinate2D]()
-        let points = userPath.points()
-        for i in 0..<userPath.pointCount {
-            coordinates.append(points[i].coordinate)
-        }
-        coordinates.append(latestLocation.coordinate)
-        
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations newLocations: [CLLocation]) {
+        locations.append(contentsOf: newLocations)
+        updateUserPath()
+    }
+    
+    private func updateUserPath() {
+        let coordinates = locations.map { $0.coordinate }
         userPath = MKPolyline(coordinates: coordinates, count: coordinates.count)
-        
-        if userPath.pointCount == 1 {
-            let newRegion = MKCoordinateRegion(center: latestLocation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
-            region = newRegion
-        }
     }
 }
+

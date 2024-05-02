@@ -8,20 +8,21 @@
 import Foundation
 import FirebaseFirestoreSwift  // Import Firestore Codable support
 
-struct Challenge: Identifiable, Codable {
-    @DocumentID var id: String?  // Firestore document ID
-    var name: String
-    var description: String
-    var participants: Int
-    var startDate: Date
-    var endDate: Date
-
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case description
-        case participants
-        case startDate
-        case endDate
+struct Challenge: Codable, Identifiable {
+    @DocumentID var id: String?
+    let userId: String  // Add userId field
+    let type: ChallengeType
+    let goalValue: Int   // Change goalValue to Integer
+    var currentProgress: Double
+    let createDate: Date
+    let dueDate: Date
+    var isCompleted: Bool {
+        return currentProgress >= Double(goalValue)
     }
+}
+
+enum ChallengeType: String, Codable {
+    case distance
+    case time
+    case calorie
 }
