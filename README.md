@@ -16,14 +16,6 @@ The `SignUpView` enables new users to create accounts. It collects user informat
 
 The `MapView` displays a map using MapKit and tracks the user's location. It visualizes the user's path as they engage in physical activities, helping them monitor their workout routes.
 
-### Custom Tab Bar Item (`customTabBarItem`)
-
-The `customTabBarItem` defines a custom tab bar item used in the app's main navigation. It includes an icon and a label, with the selected tab highlighted to enhance navigation clarity.
-
-### Custom Top Tab Bar Item (`customTopTabBarItem`)
-
-Similar to `customTabBarItem`, `customTopTabBarItem` is designed for a top tab bar style. It highlights the selected tab with a colored underline, providing an intuitive navigation experience.
-
 ### MainView
 
 The `MainView` serves as the central hub of the app, incorporating a tab bar navigation structure. It switches between different content views based on the selected tab, allowing users to seamlessly navigate between app sections.
@@ -45,3 +37,8 @@ To get started with Fithub, follow these steps:
 - Xcode 15.0 or later
 - SwiftUI
 - MapKit
+
+## Member
+
+- Chalisa Thummaraj [6410685041]
+- Tanaboon Jewriyavetch [6410615055]
