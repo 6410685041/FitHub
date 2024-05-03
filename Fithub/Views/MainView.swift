@@ -29,7 +29,7 @@ struct MainView: View {
             case 0:
                 HomepageView()
             case 1:
-                ActivityView(challengeViewModel: ChallengeViewModel())
+                ActivityHomeView()
             case 2:
                 ChallengeView()
             default:

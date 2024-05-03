@@ -45,7 +45,8 @@ struct HomepageView: View {
             }
             .padding(.top)
             .background(Color(UIColor(hex: "#292929")))
-            .background(NavigationLink(destination: ProfileView(), isActive: $showProfile) {
+//            .fullScreenCover(isPresented: $showProfile) {ProfileView()}
+            .background(NavigationLink(destination: ProfileView().background(Color(UIColor(hex: "#292929"))), isActive: $showProfile) {
                 EmptyView()
             })
         }
