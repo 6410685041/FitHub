@@ -2,6 +2,9 @@
 
 Fithub is a fitness app designed to help users track their workouts, set fitness goals, and maintain a healthy lifestyle. With features like authentication, user registration, profile management, and navigation, Fithub provides a comprehensive platform for fitness enthusiasts.
 
+## Wireframe
+https://www.canva.com/design/DAGEJukPMpQ/tOVmA0Ol8UBCSb1NPIAt6w/edit?utm_content=DAGEJukPMpQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ## Features
 
 ### SignInView
