@@ -43,6 +43,7 @@
 		C32F1F852BE3A43E009556CA /* OverAllViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F842BE3A43E009556CA /* OverAllViewModel.swift */; };
 		C32F1F872BE3BC45009556CA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F862BE3BC45009556CA /* ProfileView.swift */; };
 		C32F1F892BE3C2F6009556CA /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F882BE3C2F6009556CA /* ProfileViewModel.swift */; };
+		C32F1F8B2BE44EAF009556CA /* ActivityHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F1F8A2BE44EAF009556CA /* ActivityHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		C32F1F842BE3A43E009556CA /* OverAllViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverAllViewModel.swift; sourceTree = "<group>"; };
 		C32F1F862BE3BC45009556CA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C32F1F882BE3C2F6009556CA /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C32F1F8A2BE44EAF009556CA /* ActivityHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				C32F1F6C2BE25DA9009556CA /* ActivityView.swift */,
+				C32F1F8A2BE44EAF009556CA /* ActivityHomeView.swift */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				C32F1F632BE25959009556CA /* Extension.swift in Sources */,
 				C32F1F772BE260AE009556CA /* Challenge.swift in Sources */,
 				C32F1F6D2BE25DA9009556CA /* ActivityView.swift in Sources */,
+				C32F1F8B2BE44EAF009556CA /* ActivityHomeView.swift in Sources */,
 				C32F1F7D2BE261DF009556CA /* LocationManager.swift in Sources */,
 				C32F1F652BE25AAF009556CA /* MainViewModel.swift in Sources */,
 			);
